@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Express generated files
+*.log
+npm-debug.log*
+
+# Express dependencies
+package-lock.json
