@@ -1,5 +1,7 @@
 # Mini Message Board
 
+- **[View live demo on Adaptable.io](https://cursebreakers-message-board.adaptable.app/)**
+
 ## Features:
 
 - **[Express](https://expressjs.com/)**

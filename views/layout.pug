@@ -3,10 +3,15 @@ html
   head
     title= title
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon', type='image/x-icon', href='/images/crsbrkrs-pix.png')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     nav
-      a(href="/") Home
-      a(href="/new") New
+      a.navLnk(href="/") Home
+      a.navLnk(href="/new") New
 
     block content
+    
+    footer
+      a.logoAnchor(href="/")
+        img(src="/images/cloud.png", alt="Logo Home Button")
