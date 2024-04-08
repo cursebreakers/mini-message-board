@@ -1,8 +1,99 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 a {
+  flex: 1 1 auto;
+  background-color: #000000;
   color: #00B7FF;
+  padding: 8px;
+  margin: 0%;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #00B7FF;
+  color: #000000;
+}
+
+.header {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tray {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+.messBoard {
+  padding: 8px;
+  border: 4px solid #000000;
+  font-size: 16px;
+  width: 100%;
+}
+
+.messBoard > p {
+  padding: 8px;
+  border: 2px ridge #000000;
+}
+
+.messageForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #000000;
+  padding: 12px;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .messBoard {
+    max-width: 280px;
+  }
+
+  .messageForm {
+    max-width: 280px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+
+  .messBoard {
+    max-width: 420px;
+  }
+
+  .messageForm {
+    max-width: 420px;
+  }
 }

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+  div.header
+    h2 Submit a message:
+
+  div.tray
+    
+    form.messageForm(method="POST", action="/new")
+      label(for="message") Message:
+      input(type="text", id="message", name="messageText")
+      br
+      label(for="author") Author's Name:
+      input(type="text", id="author", name="messageUser")
+      br
+      button(type="submit") Submit
